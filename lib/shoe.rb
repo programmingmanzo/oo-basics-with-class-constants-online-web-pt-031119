@@ -1,3 +1,5 @@
+require 'pry'
+
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
@@ -6,7 +8,12 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    i = 1 
+    brand.each do |brands|
+      if brands != brands[i] 
     BRANDS << brand 
+    i += 1
+    binding.pry 
   end
 
   def cobble
