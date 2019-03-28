@@ -13,7 +13,10 @@ class Shoe
       if brands != brands[i] 
     BRANDS << brand 
     i += 1
-    binding.pry 
+    binding.pry
+      end
+  end
+  
   end
 
   def cobble
