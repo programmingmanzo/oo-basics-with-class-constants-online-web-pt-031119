@@ -14,7 +14,6 @@ class Shoe
     BRANDS << brand 
     i += 1
     binding.pry
-    end
    end
   end
   
